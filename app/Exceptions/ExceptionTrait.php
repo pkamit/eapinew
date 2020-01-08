@@ -27,6 +27,6 @@ trait ExceptionTrait
     //  return response()->json([ 'errors' => 'product Model not found'],Response::HTTP_NOT_FOUND);
 
     //  return response('Model Not found',404);
-
+         return parent::render($request, $e);
     }
 }
